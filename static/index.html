@@ -284,7 +284,8 @@ while [ "x$username" = "x" ]; do
 	read -r input;
 
 	# Keep in sync with the description and
-	#  https://github.com/hashbang/provisor/blob/master/provisor/utils.py#L77
+	#  https://github.com/hashbang/provisor/blob/6e884dd1380be4149daa9054eeb77329d99c2e80/provisor/utils.py#L84
+	#  (be sure to look at the master branch, not just that commit)
 	if echo "$input" | grep -E "^[a-z][a-z0-9]{0,30}$" >/dev/null; then
 		username="$input"
 	else
